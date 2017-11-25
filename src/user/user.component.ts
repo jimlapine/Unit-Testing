@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { UserService } from "./user.service";
-import { DataService } from "../shared/data.service";
+import { UserService } from './user.service';
+import { DataService } from '../shared/data.service';
 
 @Component({
   selector: 'app-user',
@@ -10,7 +10,7 @@ import { DataService } from "../shared/data.service";
   providers: [UserService, DataService]
 })
 export class UserComponent implements OnInit {
-  user: {name: string};
+  user: { name: string };
   isLoggedIn = false;
   data: string;
 
